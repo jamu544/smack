@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import android.com.jamsand.io.smack.databinding.ActivityMainBinding
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
@@ -44,5 +45,17 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun loginBtnNavClicked(view: View){
+
+    }
+
+    fun addChannelClicked(view: View){
+
+    }
+
+    fun sendMsgBtnClicked(view: View){
+        
     }
 }
