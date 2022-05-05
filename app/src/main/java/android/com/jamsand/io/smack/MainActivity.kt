@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import android.com.jamsand.io.smack.databinding.ActivityMainBinding
+import android.content.Intent
 import android.view.View
 
 class MainActivity : AppCompatActivity() {
@@ -48,6 +49,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loginBtnNavClicked(view: View){
+        val loginIntent = Intent(this, LoginActivity::class.java)
+        startActivity(loginIntent)
 
     }
 
@@ -56,6 +59,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun sendMsgBtnClicked(view: View){
-        
+
     }
 }
